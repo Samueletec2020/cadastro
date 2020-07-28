@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { NavController } from '@ionic/angular';
+import { RegisterPage } from '../register/register.page';
 
 @Component({
   selector: 'app-home',
@@ -6,7 +8,16 @@ import { Component } from '@angular/core';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
+  email:string;
+  password:string;
 
-  constructor() {}
+  constructor(public navCtrl: NavController) {}
+  
+  
+  login(){
+console.log("Email:"+this.email);
+console.log("Password:"+ this.password);
+  }
+ 
 
 }
