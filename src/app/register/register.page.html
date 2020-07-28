@@ -27,10 +27,10 @@
         <ion-input  placeholder="Email" ></ion-input>
       </ion-item>
       <ion-item>
-        <ion-input  placeholder="Senha" ></ion-input>
+        <ion-input    [type]="isTextFieldType ? 'text' : 'password'" placeholder="Senha" ></ion-input>
       </ion-item>
       <ion-item>
-        <ion-input  placeholder="Confirmar Senha" ></ion-input>
+        <ion-input    [type]="isTextFieldType ? 'text' : 'password'" placeholder="Confirmar Senha" ></ion-input>
       </ion-item>
       <ion-button full >Salvar</ion-button>
       <ion-button  href="home">Voltar para tela inicial</ion-button>
